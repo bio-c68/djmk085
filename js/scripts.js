@@ -1,3 +1,4 @@
+
 //botão ativar o som
 const video = document.getElementById('meuVideo');
         const botao = document.getElementById('liberarSom');
@@ -11,7 +12,7 @@ const video = document.getElementById('meuVideo');
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
     origin: 'top',
-    distance: '35px',
+    distance: '40px',
     duration: 1200,
     reset: true
   })
