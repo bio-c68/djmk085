@@ -1,10 +1,12 @@
-const vid = document.getElementById('vv');
+//botão ativar o som
+const video = document.getElementById('meuVideo');
+        const botao = document.getElementById('liberarSom');
 
-setTimeout(
-    function () {
-        vid.muted = false;
-    }
-, 1000);
+        botao.addEventListener('click', () => {
+            video.muted = false;  // Desativa o mute
+            video.play();         // Reproduz o vídeo com som
+            botao.style.display = 'none';
+        });
 
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({

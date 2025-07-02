@@ -2,9 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-*:focus {
-    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
 a{
@@ -37,7 +35,41 @@ body{
     max-width: 100%;
     z-index: -1;
   }
+  #liberarSom {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #ff5722;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 87, 34, 0.6);
+    animation: pulsar 1.5s infinite, brilho 2s infinite;
+    transition: transform 0.3s ease;
+  }
 
+  #liberarSom :hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes pulsar {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+  }
+
+  @keyframes brilho {
+    0%, 100% {
+      box-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(255, 87, 34, 1);
+    }
+  }
 .topo{
     display: flex;
     justify-content: center;
@@ -87,6 +119,12 @@ footer .wraper img{
     body{
         padding: 1rem;
         font-size: 0.7rem;
+    }
+    #liberarSom{
+        padding: 8px 20px;
+        font-size: 12px;
+        bottom: 0;
+        z-index: 0;
     }
     footer .wraper img{
         max-width: 120px;
